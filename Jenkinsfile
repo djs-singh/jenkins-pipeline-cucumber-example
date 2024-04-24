@@ -103,13 +103,13 @@ def installSonarQubeCLI() {
 
 def analyzeCodeQuality() {
     sh '''
-        /opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=owtest23_sample-java-sonar \
-        -Dsonar.organization=owtest23 \
+        /opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=djs-singh_sample-java-sonar \
+        -Dsonar.organization=djs-singh \
         -Dsonar.qualitygate.wait=true \
         -Dsonar.qualitygate.timeout=300 \
         -Dsonar.sources=src/main/java/ \
         -Dsonar.java.binaries=target/classes \
         -Dsonar.host.url=https://sonarcloud.io \
-        -Dsonar.login=65558d8b45ebd4758f3e8d49b8f3582f8707306
+        -Dsonar.login=ae7efdee1f5192e0dcbb2c5ca74cb9324384e4f3
     '''
 }
