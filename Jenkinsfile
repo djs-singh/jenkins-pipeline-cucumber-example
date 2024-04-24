@@ -66,7 +66,7 @@ pipeline {
 }
 
 def checkoutSCM() {
-    checkout scm: [$class: 'GitSCM', branches: [[name: '*/feature-test-pipeline-cucumber']], userRemoteConfigs: [[url: 'https://github.com/amitopenwriteup/jenkins-pipeline-cucumber-example.git']]]
+    checkout scm: [$class: 'GitSCM', branches: [[name: '*/feature-test-pipeline-cucumber']], userRemoteConfigs: [[url: 'https://github.com/djs-singh/jenkins-pipeline-cucumber-example.git']]]
 }
 
 def compileAndRunTests() {
